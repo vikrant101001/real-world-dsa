@@ -1,94 +1,78 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+        <h1>Real World DSA</h1>
+        <b>A List of stand alone Applications built for the purpose of showcasing the usage of DSA and AI. Each having its unique features and importance</b>
+        <div className={styles.appsContainer}>
+          {/* App 1 */}
+          <div className={styles.appWrapper}>
+            <h2>Search Suggestion using Tries</h2>
+            <iframe
+              src="https://1-search-suggestion-tries-vik.streamlit.app/"
+              className={styles.appFrame}
+              title="App 1"
             />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+          </div>
+
+          {/* App 2 */}
+          <div className={styles.appWrapper}>
+            <h2>Autocorrect Word using Levenshtein Distance</h2>
+            <iframe
+              src="https://2-autocorrect-levenshtein.streamlit.app/"
+              className={styles.appFrame}
+              title="App 2"
+            />
+          </div>
+
+          {/* App 3 */}
+          <div className={styles.appWrapper}>
+            <h2>Identifying differences in standard libraries - c++ and Java</h2>
+            <iframe
+              src="https://java-collection-vs-cpp-stl-cheatsheet.streamlit.app/"
+              className={styles.appFrame}
+              title="App 3"
+            />
+          </div>
+
+          {/* App 4 */}
+          <div className={styles.appWrapper}>
+            <h2>AI Email Generator</h2>
+            <iframe
+              src="https://java-collection-vs-cpp-stl-cheatsheet.streamlit.app/"
+              className={styles.appFrame}
+              title="App 4"
+            />
+          </div>
+
+          {/* App 5 */}
+          <div className={styles.appWrapper}>
+            <h2>AI Agents based food decider chatbot</h2>
+            <iframe
+              src="https://java-collection-vs-cpp-stl-cheatsheet.streamlit.app/"
+              className={styles.appFrame}
+              title="App 5"
+            />
+          </div>
+
+
+          {/* App 6 */}
+          <div className={styles.appWrapper}>
+            <h2>No Excuse 2025</h2>
+            <iframe
+              src="https://java-collection-vs-cpp-stl-cheatsheet.streamlit.app/"
+              className={styles.appFrame}
+              title="App 6"
+            />
+          </div>
+
+
         </div>
       </main>
       <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+        <p>By: Vikrant Thoidingjam</p>
       </footer>
     </div>
   );
